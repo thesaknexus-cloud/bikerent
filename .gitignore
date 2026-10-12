@@ -1,0 +1,13 @@
+node_modules/
+.m2/
+dist/
+target/
+.idea/
+.mvn/wrapper/maven-wrapper.jar
+*.log
+*.iml
+*.mv.db
+*.trace.db
+.env
+.env.*
+!.env.example

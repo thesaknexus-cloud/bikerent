@@ -1,0 +1,2 @@
+package com.bookstore.bike.controller; import com.bookstore.bike.entity.User; import com.bookstore.bike.repo.UserRepository; import org.springframework.security.core.context.SecurityContextHolder; import org.springframework.web.bind.annotation.*;
+@RestController @RequestMapping("/api/users") public class MeController {final UserRepository users;MeController(UserRepository u){users=u;} @GetMapping("/me") public User me(){return users.findByEmail(SecurityContextHolder.getContext().getAuthentication().getName()).orElseThrow();}}

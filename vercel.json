@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm --prefix Bike_Front install && npm --prefix Bike_Front run build",
+  "outputDirectory": "Bike_Front/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
